@@ -153,3 +153,7 @@ D:\Gam106\ServerGame106\obj\Debug\net8.0\ServerGame106.genruntimeconfig.cache
 D:\Gam106\ServerGame106\obj\Debug\net8.0\ref\ServerGame106.dll
 D:\Gam106\ServerGame106\bin\Debug\net8.0\Microsoft.AspNetCore.Server.Kestrel.Https.dll
 D:\Gam106\ServerGame106\bin\Debug\net8.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+D:\Gam106\ServerGame106\obj\Debug\net8.0\ServerGame106.sourcelink.json
+D:\Gam106\ServerGame106\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\Gam106\ServerGame106\bin\Debug\net8.0\MailKit.dll
+D:\Gam106\ServerGame106\bin\Debug\net8.0\MimeKit.dll

@@ -3,20 +3,68 @@
   "WorkspaceRootPath": "D:\\Gam106\\ServerGame106\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\migrations\\20241116072643_addratingvmtodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:migrations\\20241116072643_addratingvmtodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Gam106\\ServerGame106\\Migrations\\20241119033500_addChangePasswordDTOtoDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241119033500_addChangePasswordDTOtoDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Gam106\\ServerGame106\\Migrations\\20241119035117_addUpdateInformationToDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241119035117_addUpdateInformationToDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\models\\apigamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:models\\apigamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\models\\levelresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:models\\levelresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\models\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:models\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\dto\\userinformationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:dto\\userinformationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\migrations\\20241109093441_addmodelsgametodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:migrations\\20241109093441_addmodelsgametodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\dto\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:dto\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\models\\levelresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:models\\levelresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\viewmodel\\userinformationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,10 +105,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\migrations\\20241114081200_addlevelresultmodeltodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:migrations\\20241114081200_addlevelresultmodeltodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|d:\\gam106\\servergame106\\migrations\\20241116072643_addratingvmtodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B2B95DE-38C5-4DE3-B453-E0EFA1554B7F}|ServerGame106.csproj|solutionrelative:migrations\\20241116072643_addratingvmtodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,8 +114,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 14,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -79,6 +127,149 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Gam106\\ServerGame106\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:13:23.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Service\\EmailService.cs",
+              "RelativeDocumentMoniker": "Service\\EmailService.cs",
+              "ToolTip": "D:\\Gam106\\ServerGame106\\Service\\EmailService.cs",
+              "RelativeToolTip": "Service\\EmailService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:12:59.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmailRequest.cs",
+              "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Models\\EmailRequest.cs",
+              "RelativeDocumentMoniker": "Models\\EmailRequest.cs",
+              "ToolTip": "D:\\Gam106\\ServerGame106\\Models\\EmailRequest.cs",
+              "RelativeToolTip": "Models\\EmailRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:08:40.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmailSettings.cs",
+              "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Models\\EmailSettings.cs",
+              "RelativeDocumentMoniker": "Models\\EmailSettings.cs",
+              "ToolTip": "D:\\Gam106\\ServerGame106\\Models\\EmailSettings.cs",
+              "RelativeToolTip": "Models\\EmailSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:08:28.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Gam106\\ServerGame106\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Gam106\\ServerGame106\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-19T04:03:17.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20241119035117_addUpdateInformationToDB.cs",
+              "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Migrations\\20241119035117_addUpdateInformationToDB.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241119035117_addUpdateInformationToDB.cs",
+              "ToolTip": "D:\\Gam106\\ServerGame106\\Migrations\\20241119035117_addUpdateInformationToDB.cs",
+              "RelativeToolTip": "Migrations\\20241119035117_addUpdateInformationToDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T03:51:18.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserInformationDTO.cs",
+              "DocumentMoniker": "D:\\Gam106\\ServerGame106\\DTO\\UserInformationDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\UserInformationDTO.cs",
+              "ToolTip": "D:\\Gam106\\ServerGame106\\DTO\\UserInformationDTO.cs",
+              "RelativeToolTip": "DTO\\UserInformationDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T03:38:19.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20241109093441_addModelsGameToDb.cs",
+              "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Migrations\\20241109093441_addModelsGameToDb.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241109093441_addModelsGameToDb.cs",
+              "ToolTip": "D:\\Gam106\\ServerGame106\\Migrations\\20241109093441_addModelsGameToDb.cs",
+              "RelativeToolTip": "Migrations\\20241109093441_addModelsGameToDb.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T03:35:15.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20241119033500_addChangePasswordDTOtoDB.cs",
+              "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Migrations\\20241119033500_addChangePasswordDTOtoDB.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241119033500_addChangePasswordDTOtoDB.cs",
+              "ToolTip": "D:\\Gam106\\ServerGame106\\Migrations\\20241119033500_addChangePasswordDTOtoDB.cs",
+              "RelativeToolTip": "Migrations\\20241119033500_addChangePasswordDTOtoDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T03:35:01.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ChangePasswordDTO.cs",
+              "DocumentMoniker": "D:\\Gam106\\ServerGame106\\DTO\\ChangePasswordDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ChangePasswordDTO.cs",
+              "ToolTip": "D:\\Gam106\\ServerGame106\\DTO\\ChangePasswordDTO.cs",
+              "RelativeToolTip": "DTO\\ChangePasswordDTO.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T03:21:49.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\Gam106\\ServerGame106\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T08:19:14.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "UserInformationVM.cs",
               "DocumentMoniker": "D:\\Gam106\\ServerGame106\\ViewModel\\UserInformationVM.cs",
               "RelativeDocumentMoniker": "ViewModel\\UserInformationVM.cs",
@@ -86,11 +277,12 @@
               "RelativeToolTip": "ViewModel\\UserInformationVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T07:38:48.189Z"
+              "WhenOpened": "2024-11-16T07:38:48.189Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
               "Title": "20241116072643_addRatingVMToDb.cs",
               "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Migrations\\20241116072643_addRatingVMToDb.cs",
               "RelativeDocumentMoniker": "Migrations\\20241116072643_addRatingVMToDb.cs",
@@ -98,23 +290,25 @@
               "RelativeToolTip": "Migrations\\20241116072643_addRatingVMToDb.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T07:26:43.217Z"
+              "WhenOpened": "2024-11-16T07:26:43.217Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "RatingVM.cs",
               "DocumentMoniker": "D:\\Gam106\\ServerGame106\\ViewModel\\RatingVM.cs",
               "RelativeDocumentMoniker": "ViewModel\\RatingVM.cs",
               "ToolTip": "D:\\Gam106\\ServerGame106\\ViewModel\\RatingVM.cs",
               "RelativeToolTip": "ViewModel\\RatingVM.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAzwAIAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T07:24:56.909Z"
+              "WhenOpened": "2024-11-16T07:24:56.909Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 25,
               "Title": "20241114081200_addLevelResultModelToDb.cs",
               "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Migrations\\20241114081200_addLevelResultModelToDb.cs",
               "RelativeDocumentMoniker": "Migrations\\20241114081200_addLevelResultModelToDb.cs",
@@ -122,11 +316,12 @@
               "RelativeToolTip": "Migrations\\20241114081200_addLevelResultModelToDb.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T08:12:00.401Z"
+              "WhenOpened": "2024-11-14T08:12:00.401Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "LevelResult.cs",
               "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Models\\LevelResult.cs",
               "RelativeDocumentMoniker": "Models\\LevelResult.cs",
@@ -134,11 +329,12 @@
               "RelativeToolTip": "Models\\LevelResult.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T08:05:08.274Z"
+              "WhenOpened": "2024-11-14T08:05:08.274Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 23,
               "Title": "ResponseApi.cs",
               "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Models\\ResponseApi.cs",
               "RelativeDocumentMoniker": "Models\\ResponseApi.cs",
@@ -146,23 +342,25 @@
               "RelativeToolTip": "Models\\ResponseApi.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T08:00:28.882Z"
+              "WhenOpened": "2024-11-14T08:00:28.882Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
               "ToolTip": "D:\\Gam106\\ServerGame106\\Models\\ApplicationUser.cs",
               "RelativeToolTip": "Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T08:00:13.421Z"
+              "WhenOpened": "2024-11-14T08:00:13.421Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 20,
               "Title": "GameLevel.cs",
               "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Models\\GameLevel.cs",
               "RelativeDocumentMoniker": "Models\\GameLevel.cs",
@@ -170,11 +368,12 @@
               "RelativeToolTip": "Models\\GameLevel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T07:58:30.089Z"
+              "WhenOpened": "2024-11-14T07:58:30.089Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "Region.cs",
               "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Models\\Region.cs",
               "RelativeDocumentMoniker": "Models\\Region.cs",
@@ -182,11 +381,12 @@
               "RelativeToolTip": "Models\\Region.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T07:57:05.022Z"
+              "WhenOpened": "2024-11-14T07:57:05.022Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 19,
               "Title": "Question.cs",
               "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Models\\Question.cs",
               "RelativeDocumentMoniker": "Models\\Question.cs",
@@ -194,11 +394,12 @@
               "RelativeToolTip": "Models\\Question.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T07:57:04.297Z"
+              "WhenOpened": "2024-11-14T07:57:04.297Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 21,
               "Title": "LevelResultDTO.cs",
               "DocumentMoniker": "D:\\Gam106\\ServerGame106\\DTO\\LevelResultDTO.cs",
               "RelativeDocumentMoniker": "DTO\\LevelResultDTO.cs",
@@ -206,23 +407,25 @@
               "RelativeToolTip": "DTO\\LevelResultDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T07:49:05.86Z"
+              "WhenOpened": "2024-11-14T07:49:05.86Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "APIGameController.cs",
               "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Models\\APIGameController.cs",
               "RelativeDocumentMoniker": "Models\\APIGameController.cs",
               "ToolTip": "D:\\Gam106\\ServerGame106\\Models\\APIGameController.cs",
               "RelativeToolTip": "Models\\APIGameController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwD0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAIwBAAAAAAAAAAAswLgBAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T07:22:29.498Z"
+              "WhenOpened": "2024-11-14T07:22:29.498Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 22,
               "Title": "RegisterDTO.cs",
               "DocumentMoniker": "D:\\Gam106\\ServerGame106\\DTO\\RegisterDTO.cs",
               "RelativeDocumentMoniker": "DTO\\RegisterDTO.cs",
@@ -230,11 +433,12 @@
               "RelativeToolTip": "DTO\\RegisterDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T07:21:02.836Z"
+              "WhenOpened": "2024-11-14T07:21:02.836Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 24,
               "Title": "20241112074350_addDb.cs",
               "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Migrations\\20241112074350_addDb.cs",
               "RelativeDocumentMoniker": "Migrations\\20241112074350_addDb.cs",
@@ -242,24 +446,21 @@
               "RelativeToolTip": "Migrations\\20241112074350_addDb.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:43:50.757Z"
+              "WhenOpened": "2024-11-12T07:43:50.757Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Gam106\\ServerGame106\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
               "ToolTip": "D:\\Gam106\\ServerGame106\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wA0AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T07:38:14.424Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }
