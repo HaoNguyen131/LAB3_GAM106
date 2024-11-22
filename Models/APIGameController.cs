@@ -1,15 +1,21 @@
-﻿using Azure;
-using MailKit;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.Data;
+﻿﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Win32;
 using ServerGame106.Data;
 using ServerGame106.DTO;
-using ServerGame106.Service;
+
+using Microsoft.AspNetCore.Identity.Data;
 using ServerGame106.ViewModel;
+using static ServerGame106.ViewModel.RatingVM;
+using Azure;
+using ServerGame106.Migrations;
+using static System.Net.WebRequestMethods;
+using ServerGame106.Service;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ServerGame106.Models
 {
@@ -19,16 +25,24 @@ namespace ServerGame106.Models
 
     public class APIGameController : ControllerBase
     {
+
         private readonly ApplicationDbContext _db;
+        private readonly IEmailService _emailService;
         protected ResponseApi _response;
         private readonly UserManager<ApplicationUser> _userManager;
-        public APIGameController(ApplicationDbContext db,
-            UserManager<ApplicationUser> userManager
-            )
+        private readonly IConfiguration _configuration;
+
+        public APIGameController(
+            ApplicationDbContext db,
+            UserManager<ApplicationUser> userManager, IEmailService emailService,
+            IConfiguration configuration
+             )
         {
             _db = db;
             _response = new();
             _userManager = userManager;
+            _emailService = emailService;
+            _configuration = configuration;
         }
         [HttpGet("GetAllGameLevel")]
 
@@ -146,16 +160,19 @@ namespace ServerGame106.Models
             {
                 var email = loginRequest.Email;
                 var password = loginRequest.Password;
-
-                // Tìm người dùng bằng email
-                var user = await _userManager.FindByEmailAsync(email);
-
-                // Kiểm tra nếu người dùng tồn tại và mật khẩu đúng
+                
+                var user = await _userManager.FindByNameAsync(email);
                 if (user != null && await _userManager.CheckPasswordAsync(user, password))
                 {
+                    var token = GenerateJwtToken(user);
+                    var data = new
+                    {
+                        token = token,
+                        user = user
+                    };
                     _response.IsSuccess = true;
                     _response.Notification = "Đăng nhập thành công";
-                    _response.Data = user; // Bạn có thể gửi thông tin cần thiết về người dùng ở đây
+                    _response.Data = data; // Bạn có thể gửi thông tin cần thiết về người dùng ở đây
                     return Ok(_response);
                 }
                 else
@@ -451,16 +468,17 @@ namespace ServerGame106.Models
             }
         }
         [HttpPost("ForgotPassword")]
-        public async Task<IActionResult> ForgotPassword(string Email)
+        public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordRequest request)
         {
             try
             {
-                var user = await _userManager.FindByEmailAsync(Email);
+                var user = await _userManager.FindByEmailAsync(request.Email);
                 if (user == null)
                 {
                     _response.IsSuccess = false;
                     _response.Notification = "Không tìm thấy người dùng";
                     _response.Data = null;
+
                     return BadRequest(_response);
                 }
                 Random random = new();
@@ -468,12 +486,12 @@ namespace ServerGame106.Models
                 user.OTP = OTP;
                 await _userManager.UpdateAsync(user);
                 await _db.SaveChangesAsync();
-                string subject = "Reset Password Game 106 – " + Email;
+                string subject = "Reset Password Game 106 - " + request.Email;
                 string message = "Mã OTP của bạn là: " + OTP;
-                await _emailService.SendEmailAsync(Email, subject, message);
+                await _emailService.SendEmailAsync(request.Email, subject, message);
                 _response.IsSuccess = true;
                 _response.Notification = "Gửi mã OTP thành công";
-                _response.Data = "email sent to " + Email;
+                _response.Data = "email sent to " + request.Email;
                 return Ok(_response);
             }
             catch (Exception ex)
@@ -485,6 +503,139 @@ namespace ServerGame106.Models
             }
         }
 
+
+        [HttpPost("CheckOTP")]
+        public async Task<IActionResult> CheckOTP(CheckOTPDTO checkOTPDTO)
+        {
+            try
+            {
+                var user = await _userManager.FindByEmailAsync(checkOTPDTO.Email);
+                if (user == null)
+                {
+                    _response.IsSuccess = false;
+                    _response.Notification = "Không tìm thấy người dùng";
+                    _response.Data = null;
+                    return BadRequest(_response);
+                }
+
+                var stringOTP = Convert.ToInt32(checkOTPDTO.OTP).ToString();
+                if (user.OTP == stringOTP)
+                {
+                    _response.IsSuccess = true;
+                    _response.Notification = "Mã OTP chính xác";
+                    _response.Data = user.Email;
+                    return Ok(_response);
+                }
+                else
+                {
+                    _response.IsSuccess = false;
+                    _response.Notification = "Mã OTP không chính xác";
+                    _response.Data = null;
+                    return BadRequest(_response);
+                }
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Notification = "Lỗi";
+                _response.Data = ex.Message;
+                return BadRequest(_response);
+            }
+        }
+
+        [HttpPost("ResetPassword")]
+        public async Task<IActionResult> ResetPassword(ResetPasswordDTO resetPasswordDTO)
+        {
+            try
+            {
+                var user = await _userManager.FindByEmailAsync(resetPasswordDTO.Email);
+                if (user == null)
+                {
+                    _response.IsSuccess = false;
+                    _response.Notification = "Không tìm thấy người dùng";
+                    _response.Data = null;
+                    return BadRequest(_response);
+                }
+
+                var stringOTP = Convert.ToInt32(resetPasswordDTO.OTP).ToString();
+                if (user.OTP == stringOTP)
+                {
+                    DateTime now = DateTime.Now;
+                    user.OTP = $"{stringOTP}_used_" + now.ToString("yyyy_MM_dd_HH_mm_ss");
+
+                    var passwordHasher = new PasswordHasher<IdentityUser>();
+                    user.PasswordHash = passwordHasher.HashPassword(user, resetPasswordDTO.NewPassword);
+
+                    var result = await _userManager.UpdateAsync(user);
+                    if (result.Succeeded)
+                    {
+                        _response.IsSuccess = true;
+                        _response.Notification = "Đổi mật khẩu thành công";
+                        _response.Data = resetPasswordDTO.Email;
+                        return Ok(_response);
+                    }
+                    else
+                    {
+                        _response.IsSuccess = false;
+                        _response.Notification = "Đổi mật khẩu thất bại";
+                        _response.Data = result.Errors;
+                        return BadRequest(_response);
+                    }
+                }
+                else
+                {
+                    _response.IsSuccess = false;
+                    _response.Notification = "Mã OTP không chính xác";
+                    _response.Data = null;
+                    return BadRequest(_response);
+                }
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Notification = "Lỗi";
+                _response.Data = ex.Message;
+                return BadRequest(_response);
+            }
+        }
+        private string GenerateJwtToken(ApplicationUser user)
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+            var claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim(ClaimTypes.NameIdentifier, user.Id)
+            };
+            var token = new JwtSecurityToken(
+            issuer: _configuration["Jwt:Issuer"],
+            audience: _configuration["Jwt:Audience"],
+            claims: claims,
+            expires: DateTime.Now.AddMinutes(30),
+            signingCredentials: credentials
+            );
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+        [HttpGet("GetAllResultByUser/{userId}")]
+        [Authorize]
+        public async Task<IActionResult> GetAllResultByUser(string userId)
+        {
+            try
+            {
+                var result = await _db.LevelResults.Where(x => x.UserId == userId).ToListAsync();
+                _response.IsSuccess = true;
+                _response.Notification = "Lấy dữ liệu thành công";
+                _response.Data = result;
+                return Ok(_response);
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Notification = "Lỗi";
+                _response.Data = ex.Message;
+                return BadRequest(_response);
+            }
+        }
     }
 }
-

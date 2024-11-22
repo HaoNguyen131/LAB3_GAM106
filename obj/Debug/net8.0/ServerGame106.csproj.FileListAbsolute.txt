@@ -157,3 +157,4 @@ D:\Gam106\ServerGame106\obj\Debug\net8.0\ServerGame106.sourcelink.json
 D:\Gam106\ServerGame106\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 D:\Gam106\ServerGame106\bin\Debug\net8.0\MailKit.dll
 D:\Gam106\ServerGame106\bin\Debug\net8.0\MimeKit.dll
+D:\Gam106\ServerGame106\bin\Debug\net8.0\NETCore.MailKit.dll

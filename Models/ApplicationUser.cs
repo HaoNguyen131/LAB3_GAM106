@@ -14,7 +14,7 @@ namespace ServerGame106.Models
         public string? Avatar { get; set; }
 
         public bool IsDeleted { get; set; } = false;
-        [JsonIgnore]
+        [JsonIgnore]    
         
         public string OTP {  get; set; } =
             DateTimeOffset.Now.ToUnixTimeSeconds().ToString() + "none";

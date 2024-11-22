@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "ServerGame106.Models.APIGameController",
+    "Method": "CheckOTP",
+    "RelativePath": "api/APIGame/CheckOTP",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "checkOTPDTO",
+        "Type": "ServerGame106.DTO.CheckOTPDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServerGame106.Models.APIGameController",
     "Method": "DeleteAccount",
     "RelativePath": "api/APIGame/DeleteAccount/{userId}",
     "HttpMethod": "DELETE",
@@ -26,6 +42,22 @@
       {
         "Name": "userId",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServerGame106.Models.APIGameController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/APIGame/ForgotPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ServerGame106.Models.ForgotPasswordRequest",
         "IsRequired": true
       }
     ],
@@ -136,6 +168,22 @@
       {
         "Name": "registerDTO",
         "Type": "ServerGame106.DTO.RegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServerGame106.Models.APIGameController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/APIGame/ResetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "resetPasswordDTO",
+        "Type": "ServerGame106.DTO.ResetPasswordDTO",
         "IsRequired": true
       }
     ],
