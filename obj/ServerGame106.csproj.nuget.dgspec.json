@@ -44,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "all"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -114,12 +115,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-              "version": "[9.0.100, 9.0.100]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
